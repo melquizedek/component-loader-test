@@ -3,7 +3,8 @@ import { componentList } from '../../../environments/component-list';
 
 @Component({
     selector: 'profile',
-    template: `<h1>Profile</h1><ng-template [componentLoader]=componentToUsed></ng-template>`
+    //template: `<h1>Profile</h1><ng-template [componentLoader]=componentToUsed></ng-template>`
+    template: '<ui-loader-profile [useThisComponent]="componentToUsed"></ui-loader-profile>'
 })
 
 export class ProfileComponent implements OnInit {
@@ -15,9 +16,6 @@ export class ProfileComponent implements OnInit {
     ngOnInit() {
         //this.componentToUsed = componentList['ProfileHkComponent'];
         //this.componentToUsed = componentList['ProfileThaiComponent'];
-        if (!this.componentToUsed) {
-            this.componentToUsed = componentList['ProfileDefaultComponent'];
-        }
     }
 
 }

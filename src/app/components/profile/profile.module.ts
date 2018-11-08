@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ComponentLoaderModule } from 'zed-component-loader/src/component-loader.module';
+import { ComponentLoaderDirectiveModule } from 'zed-component-loader/src/shared/directives/component-loader.directive.module' 
+import { ProfileComponentModule } from 'zed-component-loader/src/components/profile/profile.component.module';
 
 import { ProfileRoutingModule } from './profile-routing.module';
 import { ProfileComponent } from './profile';
@@ -16,7 +17,10 @@ import { ProfileDefaultComponent } from '../profile-default/profile-default/prof
   imports: [
     CommonModule,
     ProfileRoutingModule,
-    ComponentLoaderModule,
+    
+    ComponentLoaderDirectiveModule,
+    ProfileComponentModule,
+
     ProfileDefaultModule,
     ProfileHkModule,
     ProfileThaiModule
