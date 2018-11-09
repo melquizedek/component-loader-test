@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './profile-hk.component.html',
   styleUrls: ['./profile-hk.component.scss']
 })
+
 export class ProfileHkComponent implements OnInit {
 
   data: any = null;
