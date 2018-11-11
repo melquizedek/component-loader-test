@@ -3,7 +3,7 @@ import { ViewProfileCustomComponent } from './view-profile-custom.component';
 
 @Component({
     selector: 'dss-view-profile',
-    template: `<view-profile-core [useThisComponent]="useThisComponent"></view-profile-core>`
+    template: `<core-view-profile [useThisComponent]="useThisComponent"></core-view-profile>`
 })
 
 export class ViewProfileComponent implements OnInit {
@@ -13,6 +13,6 @@ export class ViewProfileComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {
-        this.useThisComponent = ViewProfileCustomComponent;
+        //this.useThisComponent = ViewProfileCustomComponent;
     }
 }

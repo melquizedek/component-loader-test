@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { ViewProfileComponent } from './view-profile.component';
 import { ViewProfileRoute } from './view-profile.route';
 
-import { ViewProfileCoreModule } from 'zed-component-loader/src/profile/view-profile/view-profile.module';
+import { CoreProfileModule } from 'zed-component-loader/src/profile/core-profile.module';
 import { ViewProfileCustomComponent } from './view-profile-custom.component';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { ViewProfileCustomComponent } from './view-profile-custom.component';
     ],
     imports: [
         ViewProfileRoute,
-        ViewProfileCoreModule
+        CoreProfileModule
     ],
     entryComponents: [
         ViewProfileCustomComponent
