@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    template: `<h1>View Profile</h1><core-view-profile></core-view-profile>`
+    template: `<h1>Custom View Profile</h1>`
 })
 
 export class ViewProfileComponent implements OnInit {
