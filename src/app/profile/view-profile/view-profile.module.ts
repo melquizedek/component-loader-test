@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
-import { ViewProfileComponent } from './view-profile.component';
+import { CommonModule } from '@angular/common';
+import { ViewProfileComponent} from './view-profile.component';
 import { ViewProfileRoute } from './view-profile.route';
 
-import { CoreProfileModule } from 'zed-component-loader/src/profile/core-profile.module';
-import { ViewProfileCustomComponent } from './view-profile-custom.component';
-
+import { MainModule } from 'dss-component-loader';
+import { componentList } from '../../../environments/component-list';
+ 
 @NgModule({
-    declarations: [
-        ViewProfileComponent,
-        ViewProfileCustomComponent
-    ],
     imports: [
+        CommonModule,
         ViewProfileRoute,
-        CoreProfileModule
+        MainModule.forRoot({AppConfig: componentList})
     ],
-    entryComponents: [
-        ViewProfileCustomComponent
-    ]
+    declarations: [
+        ViewProfileComponent
+    ],
+    entryComponents: []
 })
 
-export class ViewProfileModule {
-
-}
+export class ViewProfileModule {}
