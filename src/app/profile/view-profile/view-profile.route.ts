@@ -1,11 +1,12 @@
-import {ModuleWithProviders} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { ViewProfileComponent } from './view-profile.component';
+import { ViewProfileCoreComponent } from 'dss-component-loader';
 
 export const routes: Routes = [
     {
         path: '',
-        component: ViewProfileComponent
+        component: (false) ? ViewProfileComponent : ViewProfileCoreComponent
     }
 ];
 

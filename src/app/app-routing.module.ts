@@ -2,15 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-	{
-		path: 'profile',
-		loadChildren: './app-loader/profile/core-profile.module#CoreProfileModule'
-	},
-	{
-		path: '',
-		redirectTo: 'profile',
-		pathMatch: 'full'
-	}
+    {
+        path: 'profile',
+        loadChildren: './profile/profile.module#ProfileModule'
+    }
 ];
 
 @NgModule({

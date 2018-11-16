@@ -11,7 +11,6 @@ import { componentList } from '../../environments/component-list';
     ProfileRoute,
     MainModule.forRoot({AppConfig: componentList})
   ],
-  declarations: [ ProfileComponent ],
-  entryComponents: [ ]
+  declarations: [ ProfileComponent ]
 })
 export class ProfileModule { }

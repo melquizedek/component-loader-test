@@ -1,18 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 
+//import { AppLoaderModule } from 'xyzapploader';
+
+//import { componentList } from '../environments/component-list';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //AppLoaderModule.forRoot({AppConfig: componentList})
   ],
   providers: [],
   bootstrap: [AppComponent]
