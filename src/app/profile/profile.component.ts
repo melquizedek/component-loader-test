@@ -2,7 +2,8 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'dss-profile',
-  template: '<h1>Profile</h1><router-outlet></router-outlet>',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
 

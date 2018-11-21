@@ -1,11 +1,11 @@
 import { ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RunViewProfileComponent } from './view-profile.component';
+import { ViewProfileComponent } from './view-profile.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: RunViewProfileComponent
+        component: ViewProfileComponent
     }
 ];
 

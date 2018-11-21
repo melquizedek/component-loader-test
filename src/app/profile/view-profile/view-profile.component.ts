@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
-    template: `<ng-template componentLoader></ng-template>`
-})
+// @Component({
+//     template: `<ng-template componentLoader></ng-template>`
+// })
 
-export class RunViewProfileComponent implements OnInit {
+// export class RunViewProfileComponent implements OnInit {
 
-    constructor() {}
+//     constructor() {}
 
-    ngOnInit() {}
+//     ngOnInit() {}
     
-}
+// }
 
 @Component({
     selector: 'custom-profile-view',

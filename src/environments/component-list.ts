@@ -1,11 +1,9 @@
-import { ViewProfileComponent } from "../app/profile/view-profile/view-profile.component";
 import { EntryComponentsModule } from "../app/entry-components.module";
+import { ProfileComponent } from '../app/profile/profile.component';
 
 export const componentList = {
     ProfileModule: {
-        components: {
-            ViewProfileComponent: ViewProfileComponent
-        }
+            //ProfileComponent: ProfileComponent
     },
     entryComponentModule: EntryComponentsModule
 }
