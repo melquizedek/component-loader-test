@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ViewProfileComponent } from './profile/view-profile/view-profile.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   imports: [
-    CommonModule
+      CommonModule,
+      MaterialModule
   ],
   declarations: [
-      ViewProfileComponent
+      ProfileComponent
   ],
   entryComponents: [
-      ViewProfileComponent
+      ProfileComponent
   ]
 })
 export class EntryComponentsModule { }
