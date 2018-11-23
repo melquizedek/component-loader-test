@@ -11,7 +11,7 @@ import { componentList } from '../../../environments/component-list';
     imports: [
         CommonModule,
         ViewProfileRoute,
-        MainModule.forRoot({AppConfig: componentList})
+        MainModule
     ],
     declarations: [
         ViewProfileComponent

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { MainModule } from 'dss-component-loader';//from core
+import { MainModule, AppRoutingCoreModule } from 'dss-component-loader';//from core
 
 import { componentList } from '../environments/component-list';
 import { ProfileComponent } from './profile/profile.component';
@@ -16,9 +16,9 @@ import { MaterialModule } from './material.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingCoreModule.forRoot({AppConfig: componentList}),//AppRoutingModule,
     MaterialModule,
-    MainModule.forRoot({AppConfig: componentList})// from core
+    MainModule// from core
   ],
   providers: [],
   bootstrap: [AppComponent]
