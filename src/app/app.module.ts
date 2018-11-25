@@ -9,16 +9,25 @@ import { componentList } from '../environments/component-list';
 import { ProfileComponent } from './profile/profile.component';
 import { MaterialModule } from './material.module';
 
+import { ComponentLoaderModule } from './component-loader/component-loader.module';
+
 @NgModule({
   declarations: [
      AppComponent,
-     ProfileComponent
+     //ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingCoreModule.forRoot({AppConfig: componentList}),//AppRoutingModule,
     MaterialModule,
-    MainModule// from core
+    MainModule,// from core
+    // ComponentLoaderModule.forRoot([
+    //   {
+    //     componentId: 'viewprofile',
+    //     path: 'view-profile',
+    //     loadChildren: './app/profile/view-profile/view-profile.module#ViewProfileModule'
+    //   }
+    // ])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,7 @@ import { ProfileComponent } from '../app/profile/profile.component';
 
 export const componentList = {
     ProfileModule: {
-            //ProfileComponent: ProfileComponent
+            ProfileComponent: ProfileComponent
     },
     entryComponentModule: EntryComponentsModule
 }
