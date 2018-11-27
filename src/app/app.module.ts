@@ -6,19 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainModule, AppRoutingCoreModule } from 'dss-component-loader';//from core
 
 import { componentList } from '../environments/component-list';
-import { ProfileComponent } from './profile/profile.component';
+//import { ProfileComponent } from './profile/profile.component';
 import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
      AppComponent,
-     ProfileComponent
+     //ProfileComponent
   ],
   imports: [
     BrowserModule,
+    MainModule,
     AppRoutingCoreModule.forRoot({AppConfig: componentList}),//AppRoutingModule,
-    MaterialModule,
-    MainModule// from core
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

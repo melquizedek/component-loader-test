@@ -1,17 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, Router } from '@angular/router';
-
-import { ProfileCoreComponent, RouteCoreService } from 'dss-component-loader';// from core
-
-import { componentList } from '../environments/component-list';
-
-const profileComponent = componentList['ProfileModule']['ProfileComponent']
-     ? componentList['ProfileModule']['ProfileComponent'] : ProfileCoreComponent;
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
     {
         path: 'profile',
-        component: profileComponent
+        component: ProfileComponent
     },
     {
         path: '',
