@@ -9,6 +9,8 @@ import { componentList } from '../environments/component-list';
 //import { ProfileComponent } from './profile/profile.component';
 import { MaterialModule } from './material.module';
 
+import { ComponentLoaderModule } from './component-loader/component-loader.module';
+
 @NgModule({
   declarations: [
      AppComponent,
