@@ -13,6 +13,9 @@ import { MaterialModule } from './material.module';
   ],
   entryComponents: [
       ProfileComponent
+  ],
+  exports: [
+    ProfileComponent
   ]
 })
 export class EntryComponentsModule { }
